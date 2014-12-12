@@ -1,0 +1,35 @@
+@import "suitcss-base";
+@import "cssrecipes-defaults";
+@import "icon";
+
+:root {
+	--font-sans     : "Helvetica Neue", Sans-serif;
+	--font-serif    : "Georgia", Serif;
+	--font-headline : var(--font-sans);
+	--font-body     : var(--font-serif);
+
+	/* color names */
+	--white       : #ccc;
+	--black       : #404040;
+	--red         : #EC433F;
+	--green       : #CAD946;
+	--yellow      : #F4D832;
+	--blue        : #4AC2CF;
+	--red-dark    : #901C20;
+	--green-dark  : #929E21;
+	--yellow-dark : #BAA600;
+	--blue-dark   : #446067;
+
+	/* theme vars */
+	--base-background: var(--white);
+	--base-color: var(--black);
+	--base-font: 18px/1.65 var(--font-serif);
+}
+
+img {
+	width: 100%;
+}
+
+html {
+	font: var(--base-font);
+}
