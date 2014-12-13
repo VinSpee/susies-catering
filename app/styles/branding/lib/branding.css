@@ -1,0 +1,12 @@
+/** @define Branding; use strict */
+/*
+ * make the logo bigger
+ */
+
+[data-am-Branding] {
+	display: block;
+	max-width: 24rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+

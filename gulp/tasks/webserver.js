@@ -16,7 +16,7 @@ gulp.task('webserver', function() {
     open: false
   });
 
-  gulp.watch(paths.source.styles , reload);
+  gulp.watch(paths.source.styles , ['styles', reload]);
   gulp.watch(paths.source.images , reload);
   gulp.watch(paths.source.sprites, reload);
   gulp.watch(paths.source.views  , ['views', reload]);

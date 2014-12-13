@@ -1,19 +1,30 @@
 @import "suitcss-base";
 @import "cssrecipes-defaults";
+@import "am-space";
+@import "am-arrange";
+@import "am-utils";
+@import "am-size";
+@import "am-align";
+@import "easings";
+
 @import "icon";
+@import "app";
+@import "branding";
+@import "nav";
+@import "menu";
 
 :root {
 	--font-sans     : "Helvetica Neue", Sans-serif;
-	--font-serif    : "Georgia", Serif;
-	--font-headline : var(--font-sans);
+	--font-serif    : "source-serif-pro", "Georgia", Serif;
+	--font-headline : var(--font-serif);
 	--font-body     : var(--font-serif);
 
 	/* color names */
-	--white       : #ccc;
+	--white       : color(#bccb7f tint(80%));
 	--black       : #404040;
 	--red         : #EC433F;
 	--green       : #CAD946;
-	--yellow      : #F4D832;
+	--yellow      : #fdd344;
 	--blue        : #4AC2CF;
 	--red-dark    : #901C20;
 	--green-dark  : #929E21;
@@ -21,10 +32,32 @@
 	--blue-dark   : #446067;
 
 	/* theme vars */
-	--base-background: var(--white);
-	--base-color: var(--black);
+	--base-background: #e02731;
+	--base-color: var(--white);
 	--base-font: 18px/1.65 var(--font-serif);
+
+	--palm : 20rem;
+	--lap  : 40rem;
+	--desk : 50rem;
+	--wide : 60rem;
+
+
+	/* COMPONENTS */
+	--Menu-background: var(--white);
+	--Menu-color-primary: var(--black);
+	--Menu-color-accent: var(--red);
+
 }
+
+
+@custom-media --palm (min-width: 30rem);
+@custom-media --lap (min-width: 40rem);
+@custom-media --desk (min-width: 50rem);
+@custom-media --wide (min-width: 60rem);
+
+@custom-media --sm-viewport (var(--palm));
+@custom-media --md-viewport (var(--lap));
+@custom-media --lg-viewport (var(--desk));
 
 img {
 	width: 100%;
@@ -32,4 +65,7 @@ img {
 
 html {
 	font: var(--base-font);
+	background: var(--base-background);
+	color: var(--white);
 }
+
