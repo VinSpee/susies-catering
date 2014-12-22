@@ -8,5 +8,10 @@
 	max-width: 24rem;
 	margin-left: auto;
 	margin-right: auto;
+	transform: translateY(0em);
+	transition: transform .2s var(--ease-out-quad);
+	&:hover {
+		transform: translateY(-.1em);
+	}
 }
 

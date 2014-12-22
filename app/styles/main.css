@@ -12,6 +12,11 @@
 @import "branding";
 @import "nav";
 @import "menu";
+@import "button";
+@import "input";
+@import "page";
+@import "link";
+@import "testimonial";
 
 :root {
 	--font-sans     : "Helvetica Neue", Sans-serif;
@@ -47,6 +52,9 @@
 	--Menu-color-primary: var(--black);
 	--Menu-color-accent: var(--red);
 
+	--Input-color: var(--black);
+	--Link-color: var(--yellow);
+
 }
 
 
@@ -69,3 +77,6 @@ html {
 	color: var(--white);
 }
 
+[data-am-Link~="plain"], [data-am-Link~="plain"]:hover {
+	box-shadow: none;
+}

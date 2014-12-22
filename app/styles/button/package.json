@@ -1,0 +1,20 @@
+{
+  "name": "button",
+  "description": "actions that arent links",
+  "version": "0.1.0",
+  "style": "index.css",
+  "files": [
+    "index.css"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {},
+  "keywords": [
+    "browser",
+    "css-components",
+    "suitcss",
+    "crank",
+    "style"
+  ]
+}

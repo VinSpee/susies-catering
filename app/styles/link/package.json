@@ -1,0 +1,20 @@
+{
+  "name": "link",
+  "description": "navigate to another page",
+  "version": "0.1.0",
+  "style": "index.css",
+  "files": [
+    "index.css"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {},
+  "keywords": [
+    "browser",
+    "css-components",
+    "suitcss",
+    "crank",
+    "style"
+  ]
+}

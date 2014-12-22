@@ -1,0 +1,10 @@
+/** @define Page; use strict */
+/*
+ * the elements of a page
+ */
+
+[data-am-Page-headline] {
+	font-size: 2.5em;
+	box-shadow: 0 1px 0 0 currentColor;
+}
+

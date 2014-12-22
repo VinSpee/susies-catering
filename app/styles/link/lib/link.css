@@ -1,0 +1,21 @@
+/** @define Link; use strict */
+/*
+ * navigate to another page
+ */
+
+:root {
+	--Link-color: white;
+}
+
+[data-am-Link],
+a {
+	display: inline-block;
+	color: var(--Link-color);
+	text-decoration: none;
+	box-shadow: inset 0 -1px 0 0 var(--Link-color);
+	transition: box-shadow .1s var(--ease-in-out-quint), transform .25s var(--ease-in-out-quint);
+	&:hover {
+		box-shadow: inset 0 -3px 0 0 var(--Link-color);
+		transform: translateY(-.1rem);
+	}
+}

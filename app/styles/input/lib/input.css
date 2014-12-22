@@ -1,0 +1,33 @@
+/** @define Input; use strict */
+/*
+ * forms n such
+ */
+
+:root {
+	--Input-color: black;
+}
+
+[data-am-Input] {
+	border: 0;
+	padding: .5rem;
+	vertical-align: middle;
+}
+
+[data-am-Input-label] {
+	&:after {
+		content: ":";
+	}
+}
+
+[data-am-Input="text"] {
+	width: 100%;
+	max-width: 30em;
+	color: var(--Input-color);
+	&:focus {
+		outline: 0;
+		box-shadow: 0 0 0 .25rem var(--yellow);
+	}
+	&::placeholder {
+		color: color(var(--Input-color) alpha(20%));
+	}
+}
