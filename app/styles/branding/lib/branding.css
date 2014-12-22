@@ -10,6 +10,7 @@
 	margin-right: auto;
 	transform: translateY(0em);
 	transition: transform .2s var(--ease-out-quad);
+	clear: both;
 	&:hover {
 		transform: translateY(-.1em);
 	}
